@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "player_data_modify",
+  "version": "${version}",
+  "name": "Player_data_modify",
+  "description": "A simple mod that enables player data modification",
+  "authors": [
+    "Suso"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/player_data_modify/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "suso.player_data_modify.client.Player_data_modifyClient"
+    ],
+    "main": [
+      "suso.player_data_modify.Player_data_modify"
+    ]
+  },
+  "mixins": [
+    "player_data_modify.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "minecraft": ">=1.19.2"
+  }
+}
